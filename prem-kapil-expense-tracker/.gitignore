@@ -1,0 +1,41 @@
+# --- General ---
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# --- Secrets ---
+# Ignore all environment files except the example template
+.env
+.env.*
+!.env.example
+
+# --- Frontend (Vite + React) ---
+# Ignore the massive node_modules folder
+frontend/node_modules/
+
+# Ignore build output
+frontend/dist/
+
+# Ignore Vite-specific cache and log files
+frontend/.vite/
+frontend/npm-debug.log*
+frontend/yarn-error.log*
+
+# --- Backend (Python + FastAPI) ---
+# Ignore the virtual environment folder
+backend/venv/
+backend/.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore build artifacts for Python
+backend/build/
+backend/dist/
+backend/htmlcov/
+backend/.pytest_cache/
